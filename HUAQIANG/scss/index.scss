@@ -1,0 +1,551 @@
+@charset "UTF-8";
+//转css路径--no-cache --update $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css
+$smallh:30px;
+$midwidth:1200px;
+$n:none;
+@mixin smallfont($size:12px,$lineheight:30px){
+  font-size : $size;
+  line-height : $lineheight;
+}
+@mixin mid($midwidth:1200px){
+      width: $midwidth;
+      margin: 0 auto;
+}
+@mixin  radius($r:4px){
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+  -s-border-radius: $r;
+}
+body{
+ font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+  color: #444444;
+}
+i{font-style: normal}
+a{text-decoration: $n}
+ul,li{list-style: $n}
+.make-num{
+  position: absolute;
+  z-index: 50;
+  display: block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #e10808;
+  border-radius: 100%;
+  font-style: normal;
+}
+//----------------------------
+.notice{
+  width: 100%;
+  height: $smallh;
+  background: #fff3cd;
+ span{
+   height: $smallh;
+  @include smallfont();
+   display: block;
+   margin: 0 auto;
+   color: #333;
+   text-align: center;
+ }
+}
+.tool-box{
+  width: 100%;
+  height:35px;
+  background: #fbfbfb;
+  border-bottom:1px solid #f2f2f2  ;
+  margin-top: 1px;
+  .tool-bar{
+    @include  mid();
+    height:35px;
+    position: relative;
+    @include smallfont($size:12px);
+    .tool-left,.tool-right{
+      height: 35px;
+      a{
+        text-decoration: $n;
+        color:#686868;
+      }
+    }
+    .tool-left{
+      float: left;
+      .tool-log{
+        color: #e10808;
+      }
+      i{
+        font-style: normal;
+        padding: 0 3px;
+        color: #b5b5b5;
+      }
+    }
+    .tool-right{
+     float: right;
+      width:340px;
+      ul{
+        width:340px;
+        height:35px;
+        margin: 0;
+        padding: 0;
+      }
+      li{
+        float: left;
+        position: relative;
+        height: 35px;
+        width:80px;
+      }
+      li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color:#898989
+      }
+      i{
+        position: absolute;
+        right: 1px;
+        top: 15px;
+        height: 10px;
+        width: 10px;
+        background: url(http://s.hqbcdn.com/assets/v4/images/newindex/sprites_index_2.png) no-repeat -36px -117px;
+        z-index: 999;
+      }
+    }
+    span{
+      display: block;
+      width: 1.6px !important;
+      height:$smallh;
+      background: #fff;
+      position: absolute;
+      top:0px;
+      right: -10px;
+    }
+    .hide-border{
+      width:100%;
+      height: 1px;
+      position: absolute;
+      top: 34px;
+      left: 1px;
+      z-index: 9999;
+      background: #fff;
+      display: none;
+    }
+    .hidden{
+      display: none;
+      position: absolute;
+      background: #ffffff;
+    }
+    .zhanghu{
+      width:160px;
+      position:absolute;
+      top:34px;
+      left: -1px;
+      border: 1px solid #ccc;
+      a{
+        float: left;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+.mess-num{
+  @extend .make-num;
+  top: -5px;
+  left: 61px;
+}
+.tool-bar .tool-right li a:hover{
+  color: red !important;
+}
+.tool-bar .tool-right li:hover{
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 2px solid #fff;
+  box-sizing: border-box;
+  i{
+    background-position-x:-47px ;
+  }
+  .hidden,.hide-border{
+    display: block;
+  }
+}
+#header{
+  @include mid();
+  height:126px;
+  .log-box,.gif-box,.search-box,.header-cart{
+    float: left;
+    margin-top: 30px;
+  }
+  .log-box{
+    width:248px;
+    height:70px;
+    margin-right: 34px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .gif{
+    width:150px;
+    height:80px;
+  }
+  .search-box{
+    width:436px;
+    height:65px;
+    margin-left: 32px;
+    margin-right: 160px;
+    .to-search,search-con{
+      width:436px;
+    }
+    .to-search{
+      height:36px;
+      input{
+        float: left;
+        box-sizing: border-box;
+      }
+      input[type="text"]{
+        width:385px;
+        height:34px;
+        padding-left: 10px;
+        border: 1px solid #e10808;
+      }
+      input[type="button"]{
+               width:47px;
+               height:34px;
+                border: none;
+                background:#e10808 url(http://s.hqbcdn.com/assets/v4/images/newindex/newHomeSprites.png) no-repeat 0 -80px ;
+             }
+    }
+    .search-con span a{
+      float: left;
+      padding-right: 19px;
+      color: #B6B6B6;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .search-con .search-hot a{
+      color: red;
+    }
+  }
+  .header-cart{
+    width:132px;
+    height: 32px;
+    border: 1px solid #eaeaea;
+    color: #232323;
+    cursor: pointer;
+    position: relative;
+    span,.mycart,img{
+      float: left;
+      margin-top: 6px;
+    }
+    img{
+      width: 22px;
+      height:23px;
+      margin-right:13px ;
+      margin-left: 8px;
+   background:  url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) right bottom
+    }
+    .mycart{
+      margin-right: 5px;
+    }
+    .cart-num{
+      @extend .make-num;
+      top: -10px;
+      left: 25px;
+    }
+  }
+}
+@import "menu-banner";
+@import "hotgoods";
+@import "floor";
+@import "last";
+/*********楼梯导航************/
+.floor-nav{
+  width: 50px;
+  text-align: center;
+  margin-left: -660px;
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 600;
+  margin-left: -664px;
+  margin-top: -180px;
+  background-color: rgb(255, 255, 255);
+  font-family: 微软雅黑;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(234, 234, 234);
+  border-image: initial;
+  a{color: #444444}
+  .hidden-box{
+    font-size: 12px;
+    background-color: #f3f3f3;
+    position: relative;
+    padding-top: 8px;
+    display: block;
+    padding: 0 10px;
+    line-height: 36px;
+    text-align: center;
+    i{
+      color: #e10808;
+    }
+    span{
+      display: block;
+      padding: 10px 0;
+      line-height: 20px;
+      border-bottom: 1px dotted #eaeaea;
+    }
+    .hidden-item{
+      display: none;
+      position: absolute;
+      top: 0;
+      right: -110px;
+      padding: 5px;
+      border: 1px solid #eaeaea;
+      background-color: #fff;
+    }
+  }
+}
+.floor-nav .nav-l{
+  font-weight: bold;
+  display: block;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 微软雅黑;
+  padding: 0px 10px;
+  span{
+    line-height: 16px;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px dotted #eaeaea;
+  }
+}
+.floor-nav .f{
+  font-weight: normal;
+}
+.on{
+  color: #fff !important;
+  background: #e10808;
+}
+.cart_list_box {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+  li{
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    .goods_pic {
+      float: left;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      margin-right: 10px;
+      text-align: center;
+      img{
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.goods_info{
+  overflow: hidden;
+  zoom: 1;
+  box-sizing: content-box;
+  .goods_tit {
+    display: block;
+    height: 36px;
+    overflow: hidden;
+    color: #232323;
+  }
+  .goods_num{
+    margin-top: 15px;
+    .price{
+      color: #fd2b4d;
+      font-family: 'Microsoft YaHei';
+      font-weight: bold;
+    }
+    .num{
+      font-style: normal;
+      font-weight: normal;
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************购物车固定栏目**********/
+.cart-fixed{
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 36px;
+  background: #2a2828;
+  z-index: 99999;
+}
+.cart-container{
+  width:36px;
+  height: 368px;
+  position:absolute;
+  top: 22%;
+  cursor: pointer;
+  .git-item{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) 0px -255px no-repeat;
+    position: relative;
+    padding: 5px 0;
+    border-bottom: 1px solid #515d76;
+    z-index: 2000;
+  }
+  .cart-item{
+    width: 24px;
+    border-bottom: 1px solid #515d76 ;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+  .to-user{
+    display: block;
+    height: 36px;
+    margin: auto;
+    background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) no-repeat left top;
+    position: relative;
+    right: 6px;
+    width: 36px;
+  }
+  .open-cart{
+    width: 20px;
+    padding: 13px 0px 20px 0;
+    height: 104px;
+    color: #fff;
+    text-align: center;
+    .cart-icon{
+      display: block;
+      width: 28px;
+      height: 26px;
+      background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) -7px -220px;
+    }
+    .cart-num{
+      display: block;
+      margin-top: 5px;
+      width: 23px;
+      height: 23px;
+      line-height: 23px;
+      margin-right: 5px;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      border-radius: 50%;
+      background-color: #e10808;
+      font-style: normal;
+    }
+  }
+}
+.to-kefu{
+  width: 22px;
+  color: #fff;
+  text-align: center;
+}
+.kefu-icon{
+  display: block;
+  height: 36px;
+  width: 36px;
+  overflow: hidden;
+  background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) no-repeat left -36px;
+  position: relative;
+  right: 6px;
+}
+.cart-detail{
+  display: none;
+  width:276px;
+  height: 100%;
+  position: absolute;
+  z-index: 9999999;
+  right: 36px;
+  top: 0;
+  background: #fff;
+  border-left: 2.5px solid #b2b2b2;
+  padding-left: 10px;
+  .cd-header{
+    height: 52px;
+    width: 250px;
+    border-bottom: 2px solid #c0c0c0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    h3,.show-time,.close{
+      float: left;
+    }
+    h3{
+      margin: 0;padding: 0;
+      font-size: 16px;
+      color: #444444;
+      font-weight: normal;
+    }
+    .show-time{
+      margin-left: 10px;
+      color: red;
+      font-size: 10px;
+      position:relative;
+      top: 4px;
+    }
+    .close{
+      display: inline-block;
+      float: right;
+      margin: 6px 10px 0 0;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      background: url(http://s.hqbcdn.com/assets/v4/images/process/right_nav_sprites.png) left -153px;
+    }
+  }
+  .total{
+    height: 38px;
+    width: 250px;
+    margin-top: 24px;
+    .total-r,button{
+      float: left;
+    }
+    .total-r{
+      .total-price{
+        color: red;
+        font-size: 12px;
+        margin: 6px 0 6px;
+      }
+      .total-num{
+        font-size: 13px;
+        color: #8d8d8d;
+      }
+    }
+    button{
+      width:132px;
+      height: 38px;
+      font-size: 14px;
+      line-height: 38px;
+      text-align: center;
+      color: #fbfbfb;
+      background: #fd2b4d;
+      margin-left: 10px;
+      border: none;
+      margin-top: 6px;
+      float: right;
+      @include radius();
+    }
+  }
+}

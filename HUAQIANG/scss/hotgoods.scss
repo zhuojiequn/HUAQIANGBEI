@@ -1,0 +1,54 @@
+$fullwidth:1350px;
+$smallh:30px;
+$midwidth:1200px;
+@mixin smallfont($size:14px,$lineheight:30px){
+  font-size : $size;
+  line-height : $lineheight;
+}
+@mixin mid($midwidth:1200px){
+  width: $midwidth;
+  margin: 0 auto;
+}
+.hot-goods{
+  @include  mid();
+  height:420px;
+  box-sizing: border-box;
+  padding-left: 106px;
+  .hot-header{
+   width:989px;
+    box-sizing: border-box;
+    height: 68px;
+    padding-left: 116px;
+    padding-top: 20px;
+    a{
+      color: #e80808;
+      float: left;
+      height: 68px;
+      margin-right: 57px;
+      img,span{
+        float: left;
+        height: 38px;
+      }
+      span{
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+  }
+  .hot-banner{
+    height: 320px;
+    a{
+     float: left;
+      width:320px;
+      height: 320px;
+      margin-right: 12px;
+      img{
+        display: block !important;
+        width:320px;
+        height: 320px;
+      }
+    }
+  }
+}
+

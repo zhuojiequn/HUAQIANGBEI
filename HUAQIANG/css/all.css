@@ -1,0 +1,1008 @@
+div{box-sizing: border-box}
+*{margin: 0;padding: 0;}
+ul,li{list-style: none}
+/*登录和注册*/
+.lr-header{
+    with:100%;
+    height:80px;
+    border-bottom: 2px solid red;
+    padding-left:184px;
+    padding-top: 14px;
+}
+.lr-header .logobox, .lr-header .lr-banner{
+    float: left;
+}
+.lr-header a{
+    display: block;
+    height: 50px;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.lr-header .logobox a{
+    width: 200px;
+    background: url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 0 top;
+}
+.lr-header .lr-banner a{
+    width: 125px;
+    border-left: 2px solid #f0f0f0;
+    padding-left: 20px;
+    background: url(https://login.okhqb.com/assets/v4/images/newindex/sprites_index.png) no-repeat 20px -393px;
+}
+.log-body{
+    padding-left: 184px;
+    width: 100%;
+    height: 584px;
+}
+.log-body img{
+    float: left;
+    max-height: 620px;
+    margin-top:34px ;
+    margin-right: 18px;
+}
+.log-body form{
+    float: left;
+    margin-top: 70px;
+    width: 348px;
+    height: 344px;
+    background: #f5f5f5;
+    border:1px solid #d7d7d7;
+    padding-left: 23px;
+}
+.log-body .form-h{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0 15px;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    display: block;
+    overflow: hidden;
+}
+.logingf input{
+    margin: 0;
+    padding: 0;
+    width: 268px;
+    height: 28px;
+    padding: 5px 10px;
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #ababab;
+    background: url(../images/login.png) 0 -237px no-repeat;
+    vertical-align: middle;
+    margin-bottom: 24px;
+}
+.logingf input[type=password]{
+    margin-bottom: 16px;
+}
+.selflog{
+    font-size: 14px;
+    color: #999999;
+    line-height: 14px;
+}
+.logingf .f-item{
+    width: 90%;
+    box-sizing: content-box;
+}
+.logingf input[type=checkbox]{
+    display: inline-block;
+    width:14px;
+    height: 14px;
+    margin-bottom: 14px;
+    vertical-align:baseline;
+    margin-right: 4px;
+}
+
+.logingf input[type=submit]{
+    float: left;
+    width: 135px;
+    height: 39px;
+    background: none;
+    border: none 0;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+    background: #3576F8;
+    margin-right: 14px;
+}
+.logb{
+    height: 40px;
+    color: #888;
+    line-height: 39px;
+}
+.logb input{
+    margin-bottom: 0;
+}
+.tip2{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #333;
+}
+.tip2 a{
+    text-decoration: none;
+}
+.tip2 a:hover{
+    text-decoration: underline;
+}
+.form-bottom{
+    margin-top: 36px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    overflow: hidden;
+}
+.form-bottom a{
+    margin: 0;
+    padding: 0 0 0 22px;
+    height: 20px;
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    background: url(../images/login.png) no-repeat;
+    text-decoration: none;
+}
+.form-bottom .qq{
+    background-position: 0 -147px;
+}
+.form-bottom .weibo{
+    background-position: 0 -177px;
+ }
+.form-bottom .zhifu{
+    background-position: 0 -207px;
+}
+.form-bottom .weixin{
+    background-position: 0 -445px;
+}
+.log-footer{
+    height: 80px;
+    text-align: center;
+    border-top: 1px solid #EEE;
+}
+.copyright{
+    height: 22px;
+    padding: 24px 0 0;
+    line-height: 22px;
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+}
+.copyright a{
+    margin: 0 2px;
+    color: #808080;
+    text-decoration: none;
+}
+/***********注册*************/
+.reg-container{
+    width: 980px;
+    height:513px;
+    margin: 0 auto;
+}
+.reg-header{
+    height: 42px;
+    text-align: left;
+    margin-bottom: 20px;
+    background: url(../images/reg_title.jpg) no-repeat;
+    border-bottom: solid 1px #e2e2e2;
+    margin-top: 8px;
+}
+.reg-phone{
+    color:#9f9e9d;
+    float: left;
+    padding: 0 36px;
+    border-top: 1px #dbdbdb solid;
+    border-left: 1px #dbdbdb solid;
+    border-bottom: 1px #fff solid;
+    border-right: 1px #dbdbdb solid;
+    background-color: #FFF;
+    height: 34px;
+    line-height: 34px;
+    color: #676767;
+    background-color: #FFF;
+    position: relative;
+    left: 190px;
+    top: 9px;
+    font-size: 14px;
+    color: #3c3c3c;
+}
+/***********************************************/
+.reg-form{
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top:38px;
+}
+
+.reg-form .item span,.reg-form .item input,.reg-form .item i,.reg-form .item tips{
+    float: left;
+}
+.reg-form .item span{
+    width: 100px;
+    text-align: right;
+    color: #333;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.reg-form .item i{
+    width: 23px;
+    height: 23px;
+    position: relative;
+    top: 8px;
+    display: none;
+}
+.reg-form .item input{
+    margin-right: 5px;
+    width: 310px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px #c9c8c8 solid;
+    text-align: left;
+    color: #333;
+    padding: 5px;
+    background: url(../images/reg_back.png) no-repeat;
+    vertical-align: middle;
+    font-size: 13px;
+}
+.reg-form .item .tips{
+    margin-left:4px;
+    color: #999;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    visibility: hidden;
+}
+.reg-form .item{
+    margin-bottom: 16px;
+}
+.reg-form .checknum input{
+    width:128px;
+}
+.reg-form .makenum{
+    width: 92px !important;
+    height: 40px !important;
+    background: url("https://login.okhqb.com/captcha/captchaImage.html?t=1") no-repeat;
+    background-size:100% 100% ;
+    float: left;
+    display: block !important;
+    position: relative;
+    top:-1px !important;
+}
+.checknum em,.checknum a{
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    float: left;
+    line-height: 36px;
+    height: 36px;
+
+}
+.checknum em{
+    margin-left: 4px;
+}
+.checknum a{
+    margin-right: 10px;
+    color: #0066cd;
+    cursor: pointer;
+}
+.checknum a:hover{
+    text-decoration: underline;
+}
+.reg-form .tomid{
+    margin-left: 102px;
+}
+.reg-form .checkit{
+    margin-top: 26px;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+.checkit input{
+    margin-right: 12px;
+}
+.checkit span{
+    color: #0066cd;
+}
+.reg-form input[type=submit]{
+    width: 144px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background:#3687fc;
+    text-align: center;
+    font-size: 14px;
+    border:none;
+    cursor: pointer;
+}
+.reg-body{
+    position: relative;
+}
+.reg-right{
+    position: absolute;
+    height: 192px;
+    width:222px;
+    border:1px solid #e2e2e2;
+    padding: 20px 0 0 26px;
+    right: 0;
+    top:40px;
+    font-size: 12px;
+    color: #666;
+}
+.has-user{
+    margin-bottom: 25px;
+}
+.has-user a{
+    color: #3576F8;
+    margin-left: 10px;
+}
+.other_list li a{
+    display: block;
+    height: 17px;
+    text-decoration: none;
+    padding-left: 22px;
+    color: #666;
+    background: url(https://login.okhqb.com/assets/v3/images/reg/reg_uni.jpg) left 0 no-repeat;
+    margin-bottom: 10px;
+}
+.other_list .wb{
+    background-position-y:-17px ;
+}
+.other_list .zf{
+    background-position-y:-34px ;
+}
+/****************************购物车*****************************************************/
+
+.cart-main{
+    width:980px;
+    margin:0 auto;
+}
+.cart-h{
+    margin:0 auto;
+    width: 516px;
+    height: 114px;
+    position: relative;
+}
+.carth-icon{
+    margin-top: 30px;
+    width: 516px;
+    height: 48px;
+    background: url("http://s2.hqbcdn.com/assets/v4/images/process/cart_sprites.png") no-repeat left 0;
+}
+.cart-h span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #cdcdcd;
+    position: absolute;
+    top: 70px;
+}
+.cart-h span:nth-child(2){
+    left: 0px;
+}
+.cart-h span:nth-child(3){
+    left: 200px;
+}
+.cart-h span:nth-child(4){
+    left: 425px;
+}
+.cart-h .car-on{
+    color: #2a2828;
+}
+.cart-u{
+    width: 980px;
+}
+.cart-u .cartu-h{
+    width: 980px;
+    height: 38px;
+    background: #fafafa;
+    border-bottom: 1px solid #ebf3ff;
+    border-top: 1px solid #ebf3ff;
+}
+.cartu-h .title{
+    float: left;
+    line-height: 38px;
+    color: black;
+    height: 38px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 124px;
+}
+.cartu-h .title-h{
+    box-sizing: content-box;
+    padding-left: 50px;
+    margin-right: 394px;
+    border-left: 2px solid #005bf3;
+}
+.title-do{
+    margin-right: 0 !important;
+}
+.cartu-li{
+    width: 980px;
+    height: 120px;
+    padding:24px 0 24px 20px;
+    border: 1px solid #dbe7e7;
+    border-top: none;
+}
+
+.cartu-li div,.cart-li span,.cartu-li img,.cartu-li input{
+    float: left;
+    text-align: center;
+}
+.cartu-li img{
+    border: 1px solid #f0f0f0;
+    padding: 5px;
+    margin-right: 10px;
+}
+.cartu-li input{
+    margin-top: 21px;
+    margin-right: 20px;
+}
+.cartu-li div{
+    margin-top: 9px;
+}
+.cartu-li .infor{
+    margin-top: 0px !important;
+    width: 200px;
+    word-break: break-word;
+    margin-right: 126px;
+    font-size: 12px;
+    color: #333;
+}
+.cartu-li .infor a{
+    text-decoration: none;
+    color: #333;
+}
+.price,.numbox,.total-p{
+    margin-right: 110px;
+}
+.price{
+    position: relative;
+    font-size: 13px;
+    color: #444444;
+}
+.price button{
+    width: 44px;
+    height: 22px;
+    color: #fff;
+    background: #fea201;
+    line-height: 22px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    position: absolute;
+    top:20px;
+    left: -6px;
+}
+.numbox .numi{
+    height: 22px;
+    width: 22px;
+    float: left;
+    line-height: 22px;
+    font-size: 12px;
+    color: #2a2828;
+    border: 1px solid #f1f0f0;
+    color: #7d257c;
+}
+.numdown,.numup{
+    color:#aaaaaa;
+    cursor: pointer;
+}
+.total-p{
+    position: relative;
+    top: 12px;
+}
+.cartu-li .do{
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(http://s2.hqbcdn.com/assets/v4/images/process/cart_sprites.png) no-repeat -166px -90px;
+    position: relative;
+    top: 21px;
+}
+.cartu-yunfei{
+    padding: 5px 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    background-color: #fafafa;
+    box-sizing: content-box;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cartu-yunfei span{
+    display: inline-block;
+    padding: 3px 15px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    border-radius: 2px;
+    background-color: #3681ff;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 16px;
+}
+.cart-jiesuan{
+    height: 170px;
+    width: 980px;
+    margin-top: 20px;
+    background: #fafafa;
+    border: 1px solid #d0d2d6;
+}
+.cart-jiesuan .jiesuan-tips{
+    border-bottom:1px solid #d0d2d6;
+    width: 978px;
+    height: 75px;
+    background: #fff;
+    line-height: 75px;
+    padding-left: 90px;
+    margin: 5px 0;
+    font-size: 14px !important;
+    font-weight: bold;
+    font-size: 14px;
+    color: #525252;
+    margin-top: 0;
+}
+.tipstop{
+    font-weight: bold;
+    font-size: 14px;
+    color: #525252;
+    position:relative ;
+    bottom: 6px;
+}
+.cart-jiesuan .tips-icon,.tipstop .tips-icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-bottom: -3px;
+    background: url(http://s2.hqbcdn.com/assets/v4/images/process/cart_sprites.png) no-repeat -190px -91px;
+}
+.cart-jiesuan .cart-timer{
+    color: red;
+}
+.back-shop,.total-infor,.cart-jiesuan button{
+    float: left;
+    margin-top: 26px;
+}
+.back-shop{
+    color: #232323;
+    font-size: 14px;
+    margin-left: 30px;
+}
+.total-infor{
+    margin-left: 268px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.total-infor span{
+    color: red;
+}
+.cart-jiesuan button{
+    padding: 24px 74px;
+    color: #fff;
+    background: #f91d32;
+    border: none;
+    margin:0;
+    float: right;
+    position: relative;
+    top:-4px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.cart-history{
+    margin-top: 20px;
+    border: 1px solid #d0d2d6;
+    padding-top: 10px;
+}
+.history-header{
+    padding-left: 30px;
+    border-bottom: 1px solid #d0d2d6;
+}
+.history-header .title{
+    width: 113px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #d0d2d6;
+    border-bottom: none;
+    background: #fff;
+    position: relative;
+    top:1px;
+}
+.history-u{
+    padding: 20px 0 24px 80px;
+}
+.history-u .history-li{
+    margin-right: 28px;
+    width: 138px;
+}
+.history-li .imgbox{
+    display: block;
+    width: 138px;
+}
+.history-li img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid #f0f0f0;
+    margin-left: 19px;
+}
+.history-li .infor{
+    width: 138px;
+    margin-top: 5px ;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: left;
+    word-break: break-all;
+    font-size: 12px;
+}
+.history-li .price{
+    font-size: 12px;
+    color: red;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.history-li button{
+    background: #fd4d4d;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -s-border-radius: 4px;
+    border: none;
+    margin-left:20px;
+}
+/**************************商品详情*****************/
+.details-body em,.details-body i{
+    font-weight: normal;
+    font-style: normal;
+ }
+.details-body .details-title{
+    height: 38px;
+    width: 100%;
+    line-height: 38px;
+    padding-left:76px ;
+    font-family:'微软优雅黑' ;
+    font-size: 12px;
+    background: #f3f4f5;
+}
+.details-con{
+    padding: 10px 108px;
+    min-height: 800px;
+}
+.details-pic,.details-mid,.details-otherbuy{
+    float: left;
+}
+.details-pic .showbox{
+    height: 340px;
+    width: 340px;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin-top: 10px;
+}
+.showbox img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.tobig{
+    display: none;
+    width: 160px;
+    height: 160px;
+    background: #3c3c3c;
+    opacity: .3;
+    border: 1px solid #9f9e9d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.showbig{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left:350px;
+    top:50px;
+    border: 1px solid #8d8c8a;
+    overflow: hidden;
+    padding: 2px;
+    display: none   ;
+}
+.showbig img{
+    display: block;
+    width: 180%;
+    height: 180%;
+}
+.picmenu{
+    width:340px;
+    position: relative;
+}
+.picmenu .hidden{
+    width:276px;
+    margin: 0 auto;
+    position: relative;
+    padding: 6px 0 36px 0;
+}
+.picmenu .hidden ul{
+    overflow: hidden;
+    width: 800px;
+    position: absolute;
+    padding: 16px 0;
+}
+.picmenu li{
+    float: left;
+    margin-right: 8px;
+    border: 1px solid #e1e1e1;
+}
+.picmenu li:after{
+    content:' ';
+    display: block;
+    clear: both;
+}
+.slide-right,.slide-left{
+    top:23px;
+    position: absolute;
+    width: 22px;
+    height: 60px;
+    border: 1px solid #e1e1e1;
+    background: url(http://s.hqbcdn.com/assets/v4/images/item/sprites1.png) no-repeat;
+}
+.slide-left{
+    background-position: -69px 0;
+}
+.slide-right{
+    background-position: -46px 0;
+    left: 318px;
+}
+.details-mid{
+    margin-left:36px;
+    padding-right: 16px;
+    border-right: 1px solid #e1e1e1;
+}
+.name-box i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    background: url(http://s.hqbcdn.com/assets/v4/images/item/sprites1.png) no-repeat -162px -135px;
+}
+.name-box .name-infor{
+    max-width: 500px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    max-height: 60px;
+    line-height: 30px;
+    color: #222222;
+    font-size: 24px;
+    overflow: hidden;
+    word-break: break-all;
+    font-family: "Microsoft Yahei";
+}
+.name-tips{
+    height: 40px;
+    line-height: 20px;
+    color: #e10808;
+}
+.allinfor{
+    width: 558px;
+    margin: 10px 0;
+    padding-left:   10px;
+    background-color: #f3f4f5;
+    overflow: hidden;
+    font-size: 12px;
+    padding-top: 18px;
+}
+.inforup,.infordown{
+    width: 100%;
+    overflow: hidden;
+    padding: 6px 0 14px 0px;
+}
+.infordown{
+    padding-bottom: 26px;
+}
+.infor-li{
+    float: left;
+}
+.inforup:after,.inforup:before{
+    content: "";
+    display: table;
+}
+.infordown:after,.infordown:before{
+    content: "";
+    display: table;
+}
+.allinfor:after,.allinfor:before{
+    content: "";
+    display: table;
+}
+.allinfor .title{
+    width: 70px;
+    text-align: right;
+    color: #666666;
+    margin-right: 16px;
+}
+.pricenow{
+    font-size: 25px;
+    color: #E10808;
+    position: relative;
+    top: -14px;
+    font-weight: bold;
+}
+.pricenow em{
+   font-family: normal;
+}
+.shijia{
+    color: #666;
+    margin-left: 20px;
+}
+.inforicon{
+    float: left;
+    width: 38px;
+    height: 42px;
+    background: url(http://s.hqbcdn.com/assets/v4/images/item/sprites1.png) no-repeat -93px 0;
+    cursor: pointer;
+    margin-left: 68px;
+    margin-right: 13px;
+}
+.allinfor .pingjia{
+    height: 35px;
+    border-left: 1px solid #444444;
+    padding-left: 13px;
+    font-size: 14px;
+    text-align: center;
+}
+.pingjia .num{
+    display: block;
+    color: #3681ff;
+    width: 70px;
+    text-align: center;
+}
+.allinfor .zeng{
+    padding: 1px 6px;
+    color: #fff;
+    background: #e10808;
+    margin-right: 9px;
+}
+.infordown em{
+    margin-right: 9px;
+    color: #ea3b08;
+}
+.cu-icon{
+    height: 24px;
+    width: 24px;
+}
+.cu-icon:nth-of-type(1){
+    background: url("http://img14.hqbcdn.com/product/69/2b/692b3571f91d1e973cfc7e904356109c.24.png");
+}
+.cu-icon:nth-of-type(2){
+    background: url("http://img7.hqbcdn.com/product/0a/89/0a8994f4a4cb7c95f108f42503549038.24.jpg");
+}
+.cu-icon:nth-of-type(3){
+    background: url("http://img10.hqbcdn.com/product/13/ef/13ef168aac88e886d4c53d6c09397901.24.jpg");
+}
+.infor-tips{
+    color:#ea3b08;
+    margin-left: 10px;
+}
+.cartbtns{
+    width: 486px;
+    overflow: hidden;
+}
+.btns-li{
+    padding:16px 0;
+}
+.btns-li>div{
+    float: left;
+}
+.btns-li .btns-title{
+    font-size:12px;
+    color: #666;
+    margin-right: 20px;
+}
+.btns-box{
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+}
+.btnbox{
+    display: inline-block;
+    padding: 10px;
+    color: #222222;
+    border: 1px solid #e1e1e1;
+    margin-right: 15px;
+    margin-bottom:24px;
+}
+.btns-li:after,.btns-li:before{
+    content: "";
+    display: table;
+}
+.btns-box:after,.btns-box:before{
+    content: "";
+    display: table;
+}
+.fenqi-icon{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 23px;
+    background: url(http://s.hqbcdn.com/assets/v4/images/item/sprites1.png) no-repeat -75px -61px;
+}
+.btns-li .buynum{
+    width:50px;
+    height: 24px;
+    box-sizing: border-box;
+    padding: 6px;
+    border:1px solid #e1e1e1;
+    margin-left:27px ;
+    margin-right:7px ;
+    text-align: center;
+}
+.getin{
+    border: none;
+    padding: 14px 32px;
+    color: #fff;
+    background: #e10808;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.details-otherbuy{
+    float: right;
+    padding: 8px;
+    width: 180px;
+}
+.details-otherbuy h2{
+    line-height: 40px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+    color: #444444;
+    font-weight: 600;
+}
+.details-otherbuy h2 i {
+    margin-left: 10px;
+    color: #E10808;
+}
+.details-otherbuy .hot-item{
+    padding: 10px;
+    text-align: center;
+}
+.details-otherbuy .hot-item img{
+    vertical-align: center;
+}
+.details-otherbuy .hot-t1{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    color: #444444;
+}
+.details-otherbuy p{
+    color: #E10808;;
+}
+
+
+
+
+
+
+
+
+
+
+
+

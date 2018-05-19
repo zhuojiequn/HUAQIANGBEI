@@ -1,0 +1,23 @@
+$smallh:30px;
+$midwidth:1205px;
+@mixin smallfont($size:14px,$lineheight:30px){
+  font-size : $size;
+  line-height : $lineheight;
+}
+@mixin mid($midwidth:1205px){
+  width: $midwidth;
+  margin: 0 auto;
+}
+//.bottom{
+//  @include mid($fullwidth);
+//  height:344px;
+//  background: #f4f3f3;
+//  margin-top: 30px;
+//}
+footer{
+  @include  mid($fullwidth);
+  height:538px;
+  background: url("../images/footer.gif");
+  background-size: cover;
+  margin-top: 30px;
+}

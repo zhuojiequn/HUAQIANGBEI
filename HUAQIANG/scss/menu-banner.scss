@@ -1,0 +1,186 @@
+/*menu+banner*/
+$fullwidth:1350px;
+$smallh:30px;
+$midwidth:1205px;
+$headerImg1:'../images/headerlistpos.png';
+$headerImg2:'http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png';
+@mixin smallfont($size:14px,$lineheight:30px){
+  font-size : $size;
+  line-height : $lineheight;
+}
+@mixin mid($midwidth:1205px){
+  width: $midwidth;
+  margin: 0 auto;
+}
+.menu-box{
+  @include  mid($fullwidth);
+  $menuh:38px;
+  height: $menuh;
+  background: #e10808;
+  position: relative;
+  .menu-first{
+    height: $menuh;
+    @include  mid($midwidth);
+    ul,li{list-style: $n}
+    >ul {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      li {
+        float: left;
+        width: 150px;
+        height: $menuh;
+        position: relative;
+      }
+      >li:nth-child(3){
+        background: url(http://img1.hqbcdn.com/misc/hw/images/hw.gif) no-repeat;
+      }
+    }
+    >ul>li>a{
+      font-size:16px;
+      font-family: " Microsoft Yahei";
+      line-height: $menuh;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      width:100%;height: 100%;
+      text-align: center;
+      position: absolute;
+      z-index: 9999;
+    }
+    ul li:hover >span{
+     display: block;
+      width: 100%;
+      height: 100%;
+      background: #444444;
+      opacity: .3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      }
+    .list-type{
+      width:174px;
+    }
+    .list-type .typeimg{
+      float: left;
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      margin: 12px 0 0 11px;
+      background: url($headerImg2) no-repeat -387px -132px;
+    }
+    .list-type>a{
+      width: 156px;
+      float: right;
+    }
+    .list-last{
+      width:210px;
+      float: right;
+      background: url(http://s.hqbcdn.com/assets/v4/images/newindex/headerListSprites.png) no-repeat 0 0;
+    }
+  }
+  .menu-second{
+    position: absolute;
+    width: 174px;
+    height: 368px;
+    top: 38px;
+    left: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.8);
+    dl{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      dt{
+        width:174px;
+        height: 47px;
+        position: relative;
+        a{
+          display: block;
+          width: 174px;
+          height: 100%;
+          line-height: 45px;
+          font-size: 14px;
+          color:#fff;
+          text-align: center;
+          .icon{
+            display: block;
+            position: absolute;
+            top: 13px;
+            left: 20px;
+            width: 18px;
+            height: 18px;
+            color: #fbfbfb;
+          }
+          i{
+            display: block;
+            float: right;
+            margin-right: 7px;
+            margin-top: 12px;
+            width: 10px;
+            height: 18px;
+            font-style: normal;
+            background: url(http://s.hqbcdn.com/assets/v4/images/newindex/newVesionSprites.png) no-repeat -590px -54px;
+          }
+        }
+      }
+    }
+  }
+}
+$posArr: (
+  1 : 0 -40px,
+  2 : -19px -40px,
+  3 : -39px -40px,
+  4 : -80px -40px,
+  5 : -59px -40px,
+  6 : -102px -40px,
+  7 : -125px -40px,
+  8 : -152px -40px,
+);
+@each $i, $pos in $posArr{
+  .menu-second  dt:nth-child(#{$i}) .icon{
+    background: url("../images/headerlistpos.png") no-repeat $pos;
+  }
+}
+.menu-second .tab-menu{
+  width: 226px;
+  height: 368px;
+  position: absolute;
+  top: 0;
+  left: 174px;
+  display: none;
+  float: left;
+  padding: 0 30px;
+  background-color: #f8f8f8;
+  a{
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #878787;
+    word-break: break-all;
+    font-family: '"Microsoft Yahei"';
+  }
+}
+.banner{
+  width:$fullwidth;
+  height:368px;
+  margin: 0 auto;
+  background: #333333;
+  ol li{
+    list-style: $n;
+  }
+   #slide-left{
+        height: 70px;
+        background: url(http://s.hqbcdn.com/assets/v4/images/newindex/home_sprites.v2.png) -269px -290px no-repeat;
+   }
+    #slide-right{
+         height: 70px;
+         background: url(http://s.hqbcdn.com/assets/v4/images/newindex/home_sprites.v2.png) -302px -290px no-repeat;
+    }
+}
+
