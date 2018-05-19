@@ -551,6 +551,9 @@ ul,li{list-style: none}
     position:relative ;
     bottom: 6px;
 }
+.tipstop span,.tipstop p{
+    display: inline-block;
+}
 .cart-jiesuan .tips-icon,.tipstop .tips-icon{
     display: inline-block;
     width: 18px;
@@ -560,6 +563,7 @@ ul,li{list-style: none}
 }
 .cart-jiesuan .cart-timer{
     color: red;
+    display: inline-block;
 }
 .back-shop,.total-infor,.cart-jiesuan button{
     float: left;

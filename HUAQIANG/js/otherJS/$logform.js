@@ -36,7 +36,7 @@ define(['jquery','$cookie'],function(){
                             $.cookie('user',reponse[0].name);
                             $.cookie('password',reponse[0].password);
                         }
-                       $(location).attr('href', 'http://localhost/HUAQIANG/html/index.html?user='+reponse[0].name);
+                       $(location).attr('href', 'http://localhost/HUAQIANG/html/index.html?');
                     }else{
                         alert('用户名/密码 错误');
                     }

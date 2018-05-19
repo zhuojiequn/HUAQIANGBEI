@@ -9,24 +9,8 @@ define(['jquery','$cookie','$cartloading'],function(){
                     style="display:block;padding: 2px;border: 1px solid #1e1e1e;
                     position: absolute;z-index:999999" class="flytocart">`;
             $(this).append(html);
-            var speedx=20,speedy=10;
-            //飞入购物效果
-            var flying = setInterval(function(){
-                if($('.open-cart').offset().top > $('.flytocart').offset().top){
-                    speedy = 10;
-                }else if($('.open-cart').offset().top == $('.flytocart').offset().top){
-                    speedy =0;
-                }
-                if($('.open-cart').offset().left - $('.flytocart').width() > $('.flytocart').offset().left){
-                    $('.flytocart').offset({
-                        left:$('.flytocart').offset().left + speedx,
-                        top:$('.flytocart').offset().top +speedy,
-                    });
-                }else{
-                    clearInterval(flying);
-                    $('.flytocart').remove();
-                }
-            },2);
+            flyinTo($('.flytocart'),$('.open-cart'));
+
             //增加商品+++判断当前登录用户创建数据表+
             var src = $('.smallpic').attr('src');
             var sid = $('.smallpic').attr('sid');

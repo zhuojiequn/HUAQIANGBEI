@@ -14,8 +14,8 @@ define(['jquery'],function(){
             return prevChange(now.prev());
         }
     }
-    return function(){
-        var box = $('.buytimer');
+    function downTimer(doms){
+        var box = doms;
         box.each(function(i){
             var lastItem = box.eq(i).find('span').last();
             box[i].timer = setInterval(function(){
@@ -24,4 +24,5 @@ define(['jquery'],function(){
             },1000);
         });
     };
+    return downTimer;
 });

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2018 年 05 月 19 日 06:49
+-- 生成日期: 2018 年 05 月 19 日 09:08
 -- 服务器版本: 5.5.8
 -- PHP 版本: 5.3.3
 
@@ -38,7 +38,9 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`buynum`, `buysid`) VALUES
-(8, 16);
+(2, 13),
+(6, 14),
+(24, 16);
 
 -- --------------------------------------------------------
 
@@ -57,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `admin1` (
 --
 
 INSERT INTO `admin1` (`buynum`, `buysid`) VALUES
-(4, 2),
+(6, 2),
 (2, 10),
 (1, 12),
 (6, 14);

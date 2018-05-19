@@ -1,5 +1,7 @@
-define(['jquery','$cookie','$cartloading','$intocart'],function($,c,cart,flyinto){
+define(['jquery','$cookie','$cartloading','$intocart','$buytimer'],function($,c,cart,flyinto,overtimer){
     ;(function(){
+        //结算倒计时
+        overtimer($('.overtimer'));
         if($.cookie('user')){
             var user = $.cookie('user');
         }

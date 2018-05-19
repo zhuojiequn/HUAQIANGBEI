@@ -4,10 +4,10 @@ define(['jquery','$buytimer','$cookie'],function($,buyTimer){
         if($.cookie('user')&& $.cookie('password')){
             var username = $.cookie('user');
             loging(username);
-        }else if($(location).attr('href').match(/=\w+/)!=null){
+        }/*else if($(location).attr('href').match(/=\w+/)!=null){
             var username = $(location).attr('href').match(/=\w+/).join(',').replace('=','');
             loging(username);
-        }
+        }*/
         //加载用户信息
         function loging(username){
             $('.tool-log').css({color:'#444'});
@@ -161,7 +161,7 @@ define(['jquery','$buytimer','$cookie'],function($,buyTimer){
                 }
                 load(navitem,goodsdata);
                 //特惠区定时器
-                buyTimer();
+                buyTimer($('.buytimer'));
             }
         });
     });
