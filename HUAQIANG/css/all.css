@@ -451,6 +451,11 @@ ul,li{list-style: none}
 .cartu-li .infor a{
     text-decoration: none;
     color: #333;
+    display:block;
+}
+.cartu-li .infor span{
+    display: block;
+    margin-top: 10px;
 }
 .price,.numbox,.total-p{
     margin-right: 110px;
