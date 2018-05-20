@@ -78,7 +78,7 @@ define(['jquery','$cookie'],function(){
                                         <div class="infor">
                                             <a href="http://localhost/HUAQIANG/html/details.html?=${data[i].sid}" target="_blank">
                                                 ${data[i].title}</a>
-                                            <span> ${data[i].title2}</span>
+                                            <span> ${data[i].title1}</span>
                                         </div>
                                         <div class="price">${data[i].price1}
                                             <button>特价</button>
